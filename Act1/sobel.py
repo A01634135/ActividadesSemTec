@@ -46,7 +46,7 @@ def sobel_edge_detection(image, filter, verbose=False):
  
 if __name__ == '__main__':
     #sobel filter mask/kernel 
-    filter = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
+    filter = np.array([[1, 2, 1], [0, 0, 0], [-1, -2, -1]])
     #get image arguments from the shell  "python sobel.py -i image.jpg"
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", required=True, help="Path to the image")
